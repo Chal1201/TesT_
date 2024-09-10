@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .status-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            width: 300px;
+        }
+        .status-container h2 {
+            margin-top: 0;
+        }
+        .status-item {
+            margin: 10px 0;
+        }
+        .status-item span {
+            font-weight: bold;
+        }
+        .online {
+            color: green;
+        }
+        .offline {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-container">
+        <h2>Status</h2>
+        <div class="status-item">
+            <span>User:</span> <span class="offline">Offline</span>
+        </div>
+        <div class="status-item">
+            <span>Player:</span> <span class="offline">Offline</span>
+        </div>
+        <div class="status-item">
+            <span>Studio:</span> <span class="offline">Offline</span>
+        </div>
+        <div class="status-item">
+            <span>Subcomponents:</span> <span class="offline">Offline</span>
+        </div>
+    </div>
+</body>
+</html>

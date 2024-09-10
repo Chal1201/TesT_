@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lobby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container, .form-container, .lobby-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            width: 300px;
+        }
+        .menu-container h2, .form-container h2, .lobby-list h2 {
+            margin-top: 0;
+        }
+        .menu-container button, .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .menu-container button:hover, .form-container button:hover {
+            background-color: #45a049;
+        }
+        .lobby-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lobby-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .links a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Welcome, <span id="usernameDisplay"></span></h2>
+        <button id="createLobbyButton">Create Lobby</button>
+        <button id="viewLobbiesButton">View Lobbies</button>
+    </div>
+    <div class="form-container" id="createLobbyContainer" style="display: none;">
+        <h2>Create Lobby</h2>
+        <form id="createLobbyForm">
+            <div class="error" id="createLobbyError"></div>
+            <label for="lobbyName">Lobby Name:</label>
+            <input type="text" id="lobbyName" name="lobbyName" required>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <div class="lobby-list" id="lobbyListContainer" style="display: none;">
+        <h2>Available Lobbies</h2>
+        <ul id="lobbyList"></ul>
+    </div>
+    <div class="links">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="status.html">Status</a>
+    </div>
+</body>
+</html>
